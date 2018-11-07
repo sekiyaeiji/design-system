@@ -1,4 +1,4 @@
-# gn-form-global-designsystem
+# design-system
 
 # package
 
