@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+// config
+@import "./../config/_variable.scss";
+
+// setting
+@import "common/_reset.scss";
+@import "common/_selector.scss";
+@import "common/_common.scss";
+
+// skin
+@import "common/_skin.scss";
+
+// component
+@import "component/_header.scss";
+@import "component/_footer.scss";

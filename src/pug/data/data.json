@@ -1,0 +1,46 @@
+{
+  "component": [
+    {
+      "title": "input text",
+      "url": "input-text",
+      "is-released": 1,
+      "is-inprogress": 0,
+      "is-proposed": 0
+    },
+    {
+      "title": "button",
+      "url": "button",
+      "is-released": 1,
+      "is-inprogress": 0,
+      "is-proposed": 0
+    },
+    {
+      "title": "checkbox",
+      "url": "checkbox",
+      "is-released": 1,
+      "is-inprogress": 0,
+      "is-proposed": 0
+    },
+    {
+      "title": "radio button",
+      "url": "radio-button",
+      "is-released": 1,
+      "is-inprogress": 0,
+      "is-proposed": 0
+    }
+  ],
+  "page_data": [
+    {
+      "title": "title1",
+      "text": "text1"
+    },
+    {
+      "title": "title2",
+      "text": "text2"
+    },
+    {
+      "title": "title3",
+      "text": "text3"
+    }
+  ]
+}
