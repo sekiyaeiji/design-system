@@ -2,9 +2,12 @@ doctype html
 html(lang=ja)
   include ../include/foundation/head
   body
-    include ../include/foundation/header
-    include ../include/foundation/nav
-    include ../include/foundation/footer
+    .wrapper
+      include ../include/foundation/nav
 
-    script(src='js/foundation.js')
-    script(src='js/gn-form.js')
+      main.main
+        include ../include/foundation/header
+        include ../include/foundation/footer
+
+    script(src='/js/foundation.js')
+    script(src='/js/gn-form.js')

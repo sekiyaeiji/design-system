@@ -1,3 +1,73 @@
 @charset "utf-8";
 
-// header
+/*
+* header
+*/
+
+// SP
+.header {
+}
+
+// PC (media query)
+@include mq {
+  .header {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 36px 40px 36px;
+    border-bottom: 1px solid #ddd;
+    line-height: $LINE_HEIGHT_NONE;
+
+    .logo {
+      width: 300px;
+
+      a {
+        font-size: $FONT_SIZE_L;
+        font-weight: bold;
+
+        &:before {
+          content: "";
+          display: inline-block;
+          margin-right: 15px;
+          width: 72px;
+          height: 20px;
+          background-image: url(../img/logo.png);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 72px 20px;
+        }
+      }
+    }
+
+    .utility {
+      width: 620px;
+      text-align: right;
+
+      > li {
+        display: inline-block;
+        margin-left: 20px;
+
+        > a {
+          vertical-align: middle;
+
+          &:before {
+            content: "";
+            margin-right: 5px;
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 14px 14px;
+            vertical-align: middle;
+          }
+
+          &.github {
+            &:before {
+              background-image: url(../img/icon-github.png);
+            }
+          }
+        }
+      }
+    }
+  }
+}

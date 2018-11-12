@@ -1,4 +1,19 @@
-ul
-  for item in component
-    li
-      a(href= item.url)= item.title
+.navi
+  h2.h2.js-naviTitle Released
+  ul.navi-item
+    for item in component
+      if item.is_released === 1
+        li
+          a(href="/component/" + item.url + ".html")= item.title
+  h2.h2.js-naviTitle.is-close Inprogress
+  ul.navi-item.is-close
+    for item in component
+      if item.is_inprogress === 1
+        li
+          a(href="/component/" + item.url + ".html")= item.title
+  h2.h2.js-naviTitle.is-close Suggestion
+  ul.navi-item.is-close
+    for item in component
+      if item.is_suggestion === 1
+        li
+          a(href="/component/" + item.url + ".html")= item.title

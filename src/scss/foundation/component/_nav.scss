@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/*
+* navi
+*/
+
+// SP
+.navi {
+  font-family: $FONT_FAMILY_ENGLISH;
+  letter-spacing: .07em;
+  background: $COLOR_BG_NAV;
+  color: $COLOR_TXT_REVERSE;
+  display: none;
+
+  a {
+    color: $COLOR_TXT_REVERSE;
+  }
+}
+
+// PC (media query)
+@include mq {
+  .navi {
+    display: block;
+    padding: 104px 0 30px;
+    width: $WIDTH_PC_NAV;
+    min-height: 100%;
+
+    .h2 {
+      position: relative;
+      padding: 16px 35px 15px 35px;
+      font-size: $FONT_SIZE_S;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+        opacity: .8;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        right: 20px;
+        top: 26px;
+        width: 7px;
+        height: 7px;
+        transform: rotate(45deg);
+        border-top: 1px solid $COLOR_BG_HIGHLIGHT;
+        border-left: 1px solid $COLOR_BG_HIGHLIGHT;
+      }
+
+      &.is-close {
+        &:after {
+          top: 21px;
+          transform: rotate(225deg);
+        }
+      }
+    }
+
+    .navi-item {
+      > li {
+        > a {
+          display: block;
+          padding: 10px 5px 10px 70px;
+
+          &:hover {
+            text-decoration: underline;
+            opacity: .8;
+          }
+        }
+      }
+
+      &.is-close {
+        > li {
+          display: none;
+        }
+      }
+    }
+  }
+}

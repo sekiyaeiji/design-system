@@ -1,0 +1,51 @@
+doctype html
+html(lang=ja)
+  include ../../include/foundation/head
+  body
+    .wrapper
+      include ../../include/foundation/nav
+
+      main.main
+        include ../../include/foundation/header
+
+        article.article
+          h1.h1 input text
+
+          h2.h2 sample
+
+          .sample
+            input(type="text", class="" + site_data.this_guide_prefix + "input_text", placeholder="プレースホルダー")
+
+          h2.h2 code
+
+          h3.h3 html
+
+          .snippet
+            pre &lt;input class=&quot;#{site_data.this_guide_prefix}input_text&quot; type=&quot;text&quot; placeholder=&quot;プレースホルダー&quot;&gt;
+
+          h3.h3 CSS
+
+          .snippet
+            pre text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+              br
+              | text
+              br
+              | text text
+              br
+              | text text text
+
+          h3.h3 JS
+
+          .snippet
+            pre text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+              br
+              | text
+              br
+              | text text
+              br
+              | text text text
+
+        include ../../include/foundation/footer
+
+    script(src='/js/foundation.js')
+    script(src='/js/gn-form.js')

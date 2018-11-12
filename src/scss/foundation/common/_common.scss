@@ -1,3 +1,42 @@
 @charset "utf-8";
 
-// common
+/*
+* common
+*/
+
+// SP
+a {
+  color: $COLOR_TXT_LINK;
+}
+body {
+  height: 100%;
+  font-size: $FONT_SIZE_M;
+  font-family: $FONT_FAMILY_DEFAULT;
+  line-height: $LINE_HEIGHT_M;
+  background: $COLOR_BG_DEFAULT;
+}
+
+.wrapper {
+}
+
+.main {
+  position: relative;
+  width: $WIDTH_PC_CONTENT;
+  min-height: 100%;
+}
+
+// PC (media query)
+@include mq {
+  .wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: $WIDTH_PC_WINDOW;
+    min-height: 100%;
+  }
+
+  .main {
+    position: relative;
+    width: $WIDTH_PC_CONTENT;
+    min-height: 100%;
+  }
+}

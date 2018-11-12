@@ -1,46 +1,53 @@
 {
+  "site_data": {
+    "title": "Global Design Guide",
+    "description": "LOGO Global Design Guide",
+    "url": "https://this-guide.domain/",
+    "copyright": "this guide.",
+    "this_guide_prefix": "thisPrefix-"
+  },
   "component": [
     {
       "title": "input text",
       "url": "input-text",
-      "is-released": 1,
-      "is-inprogress": 0,
-      "is-proposed": 0
+      "is_released": 1,
+      "is_inprogress": 0,
+      "is_suggestion": 0
     },
     {
       "title": "button",
       "url": "button",
-      "is-released": 1,
-      "is-inprogress": 0,
-      "is-proposed": 0
+      "is_released": 1,
+      "is_inprogress": 0,
+      "is_suggestion": 0
     },
     {
       "title": "checkbox",
       "url": "checkbox",
-      "is-released": 1,
-      "is-inprogress": 0,
-      "is-proposed": 0
+      "is_released": 1,
+      "is_inprogress": 0,
+      "is_suggestion": 0
     },
     {
       "title": "radio button",
       "url": "radio-button",
-      "is-released": 1,
-      "is-inprogress": 0,
-      "is-proposed": 0
-    }
-  ],
-  "page_data": [
-    {
-      "title": "title1",
-      "text": "text1"
+      "is_released": 1,
+      "is_inprogress": 0,
+      "is_suggestion": 0
     },
     {
-      "title": "title2",
-      "text": "text2"
+      "title": "hoge",
+      "url": "hoge",
+      "is_released": 0,
+      "is_inprogress": 1,
+      "is_suggestion": 0
     },
     {
-      "title": "title3",
-      "text": "text3"
+      "title": "fuga",
+      "url": "fuga",
+      "is_released": 0,
+      "is_inprogress": 0,
+      "is_suggestion": 1
     }
   ]
 }

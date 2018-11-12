@@ -1,3 +1,27 @@
 @charset "utf-8";
 
-// footer
+/*
+* footer
+*/
+
+// SP
+.footer {
+  .copyright {
+    .copy {
+      margin-right: .5em;
+      font-family: $FONT_FAMILY_ENGLISH;
+    }
+  }
+}
+
+// PC (media query)
+@include mq {
+  .footer {
+    position: absolute;
+    bottom: 0;
+    padding: 40px 0;
+    width: $WIDTH_PC_CONTENT;
+    text-align: center;
+    font-size: $FONT_SIZE_3S;
+  }
+}

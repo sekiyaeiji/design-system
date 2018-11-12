@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*
+* footer
+*/
+
+// SP
+.#{$SELECTOR_PREFIX}input_text {
+  border: 1px solid $COLOR_BORDER_DEFAULT;
+  border-radius: $BORDER_RADIUS_DEFAULT;
+
+  &::placeholder {
+    color: $COLOR_TXT_LIGHT;
+  }
+}
+
+// PC (media query)
+@include mq {
+  .#{$SELECTOR_PREFIX}input_text {
+    padding: 20px 14px;
+    font-size: $FONT_SIZE_M;
+  }
+}

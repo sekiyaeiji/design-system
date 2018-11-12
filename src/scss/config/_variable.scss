@@ -1,11 +1,105 @@
 @charset "utf-8";
 
-// font family
-$FONT_FAMILY: Meiryo, "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, Arial, Sans-serif;
-$FONT_FAMILY_ENGLISH: HelveticaNeue, Helvetica, Arial, Sans-serif;
+/*
+* this design guide selector prefix
+*/
+$SELECTOR_PREFIX: "thisPrefix-";
 
-// color
+/*
+* font family
+*/
+$FONT_FAMILY_DEFAULT: "Hiragino Kaku Gothic Pro", Meiryo, "ＭＳ Ｐゴシック", Osaka, "HelveticaNeue-Thin", "Helvetica Neue Thin", HelveticaNeue, Helvetica, Arial, Sans-serif;
+$FONT_FAMILY_ENGLISH: "HelveticaNeue-Thin", "Helvetica Neue Thin", HelveticaNeue, Helvetica, Arial, Sans-serif;
 
-// font size
+/*
+* width
+*/
+$WIDTH_SP_MIN: 320px;
+$WIDTH_BREAKOPINT: 769px;
+$WIDTH_PC_WINDOW: 1280px;
+$WIDTH_PC_CONTENT: 1000px;
+$WIDTH_PC_NAV: 280px;
 
-// mixin
+/*
+* font size
+*/
+$FONT_SIZE_5L: 32px;
+$FONT_SIZE_4L: 28px;
+$FONT_SIZE_3L: 22px;
+$FONT_SIZE_2L: 20px;
+$FONT_SIZE_L: 18px;
+$FONT_SIZE_M: 16px;
+$FONT_SIZE_S: 14px;
+$FONT_SIZE_2S: 12px;
+$FONT_SIZE_3S: 10px;
+$FONT_SIZE_ZERO: 0;
+
+/*
+* line height
+*/
+$LINE_HEIGHT_2L: 2.4;
+$LINE_HEIGHT_L: 2;
+$LINE_HEIGHT_M: 1.8;
+$LINE_HEIGHT_S: 1.6;
+$LINE_HEIGHT_2S: 1.4;
+$LINE_HEIGHT_NONE: 1;
+
+/*
+* background color
+* 背景色
+*/
+// 標準
+$COLOR_BG_DEFAULT: #fff;
+
+// ナビ
+$COLOR_BG_NAV: #0070b5;
+
+// ハイライト
+$COLOR_BG_HIGHLIGHT: #fff;
+
+// 薄色
+$COLOR_BG_LIGHT: #999;
+
+/*
+* color
+* 文字色
+*/
+// 標準
+$COLOR_TXT_DEFAULT: #333;
+
+// 反転
+$COLOR_TXT_REVERSE: #fff;
+
+// リンク
+$COLOR_TXT_LINK: #0070b5;
+
+// 薄文字
+$COLOR_TXT_LIGHT: #999;
+
+// 少し薄い
+$COLOR_TXT_MIDLIGHT: #666;
+
+/*
+* border color
+* 文字色
+*/
+// 標準
+$COLOR_BORDER_DEFAULT: #ddd;
+
+/*
+* border radius
+* 文字色
+*/
+// 標準
+$BORDER_RADIUS_DEFAULT: 4px;
+
+/*
+* mixin
+*/
+// PC & Tablet-landscape layout media query (SP 1st)
+// PC と landscape 表示時のTabletに適用する media query
+@mixin mq {
+  @media only screen and (min-width: $WIDTH_BREAKOPINT) {
+    @content;
+  }
+}

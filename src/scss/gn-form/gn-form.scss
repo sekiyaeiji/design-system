@@ -3,9 +3,5 @@
 // config
 @import "./../config/_variable.scss";
 
-// setting
-@import "common/_reset.scss";
-@import "common/_selector.scss";
-@import "common/_common.scss";
-
 // component
+@import "component/_this_guide-input_text.scss";
