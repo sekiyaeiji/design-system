@@ -1,10 +1,11 @@
 const webpack = require('webpack')
 const PrettierPlugin = require('prettier-webpack-plugin')
+const version = require('../conf/version.json')
 
 module.exports = {
   entry: {
-    foundation: './src/js/foundation/index.js',
-    'gn-form': './src/js/gn-form/index.js'
+    ['foundation-' + version.js.foundation] : './src/js/foundation/index.js',
+    ['gn_form-' + version.js.gn_form] : './src/js/gn_form/index.js'
   },
   output: {
     path: __dirname + '/../dist/js',
