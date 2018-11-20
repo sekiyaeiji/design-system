@@ -4,8 +4,8 @@ const version = require('../conf/version.json')
 
 module.exports = {
   entry: {
-    ['foundation-' + version.js.foundation] : './src/js/foundation/index.js',
-    ['gn_form-' + version.js.gn_form] : './src/js/gn_form/index.js'
+    ['foundation-' + version.version.js.foundation] : './src/js/foundation/index.js',
+    ['gn_form-' + version.version.js.gn_form] : './src/js/gn_form/index.js'
   },
   output: {
     path: __dirname + '/../dist/js',
